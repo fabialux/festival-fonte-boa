@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ranking | Festival de Fonte Boa</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+  <div class="container header__content">
+    <div class="logo-area">
+      <img src="assets/images/bois-logo.png" alt="Festival de Fonte Boa" class="logo-img">
+      <span>Festival de Fonte Boa</span>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+      ☰
+    </button>
+
+    <nav class="nav" id="mobileNav">
+      <a href="index.html">Início</a>
+      <a href="festival.html">Festival</a>
+      <a href="bois.html">Bois</a>
+      <a href="ranking.html">Ranking</a>
+      <a href="cadastro.html">Cadastro</a>
+    </nav>
+  </div>
+</header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="hero-tag">Torcida ao vivo</p>
+        <h2>Ranking das Torcidas</h2>
+        <p>
+          Acompanhe em tempo real a quantidade de cadastrados
+          do Tira-Prosa e do Corajoso.
+        </p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="ranking-page">
+
+          <div class="ranking-highlight" id="rankingHighlight">
+            <span class="ranking-highlight__label">Liderando agora</span>
+            <h3 id="liderNome">Empate</h3>
+            <p id="liderTexto">As duas torcidas estão lado a lado no momento.</p>
+          </div>
+
+          <div class="ranking-scoreboard">
+            <div class="score-card score-card--red">
+              <span class="score-card__label">Tira-Prosa</span>
+              <strong class="score-card__number" id="rankingTiraProsa">0</strong>
+              <span class="score-card__sub">cadastros</span>
+            </div>
+
+            <div class="scoreboard-center">
+              <span>VS</span>
+            </div>
+
+            <div class="score-card score-card--blue">
+              <span class="score-card__label">Corajoso</span>
+              <strong class="score-card__number" id="rankingCorajoso">0</strong>
+              <span class="score-card__sub">cadastros</span>
+            </div>
+          </div>
+
+          <div class="ranking-bars-panel">
+            <div class="ranking-line">
+              <div class="ranking-line__top">
+                <span class="ranking-line__name ranking-line__name--red">Tira-Prosa</span>
+                <span class="ranking-line__percent" id="percentTiraProsa">50%</span>
+              </div>
+              <div class="bar bar--large">
+                <div class="bar-fill bar-fill--red" id="barTiraProsa" style="width: 50%;"></div>
+              </div>
+            </div>
+
+            <div class="ranking-line">
+              <div class="ranking-line__top">
+                <span class="ranking-line__name ranking-line__name--blue">Corajoso</span>
+                <span class="ranking-line__percent" id="percentCorajoso">50%</span>
+              </div>
+              <div class="bar bar--large">
+                <div class="bar-fill bar-fill--blue" id="barCorajoso" style="width: 50%;"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/ranking.js"></script>
+  <footer class="footer">
+  <div class="container footer__content">
+    <div class="footer__brand">
+      <img src="assets/images/bois-logo.png" alt="Festival de Fonte Boa" class="footer__logo">
+      <div>
+        <strong>Festival de Fonte Boa</strong>
+        <p>Tradição, cultura e a força das torcidas.</p>
+      </div>
+    </div>
+
+    <div class="footer__links">
+      <a href="index.html">Início</a>
+      <a href="festival.html">Festival</a>
+      <a href="bois.html">Bois</a>
+      <a href="ranking.html">Ranking</a>
+      <a href="cadastro.html">Cadastro</a>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <p>Fonte Boa - Amazonas • Festival de Fonte Boa</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

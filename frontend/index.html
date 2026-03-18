@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festival de Fonte Boa</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+  <div class="container header__content">
+    <div class="logo-area">
+      <img src="assets/images/bois-logo.png" alt="Festival de Fonte Boa" class="logo-img">
+      <span>Festival de Fonte Boa</span>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+      ☰
+    </button>
+
+    <nav class="nav" id="mobileNav">
+      <a href="index.html">Início</a>
+      <a href="festival.html">Festival</a>
+      <a href="bois.html">Bois</a>
+      <a href="ranking.html">Ranking</a>
+      <a href="cadastro.html">Cadastro</a>
+    </nav>
+  </div>
+</header>
+  <main>
+    <section class="hero-mobile">
+      <div class="container hero-mobile__content">
+        <p class="hero-tag">Festival Folclórico</p>
+        <h1>Festival de Fonte Boa</h1>
+        <p class="hero-subtitle">
+          Acompanhe a força das torcidas do Tira-Prosa e do Corajoso em tempo real.
+        </p>
+
+        <div class="hero-mobile__buttons">
+          <a href="cadastro.html" class="btn btn--red">Sou Tira-Prosa</a>
+          <a href="cadastro.html" class="btn btn--blue">Sou Corajoso</a>
+        </div>
+
+        <div class="hero-mobile__image">
+          <img src="assets/images/bois-logo.png" alt="Tira-Prosa e Corajoso">
+        </div>
+      </div>
+    </section>
+
+    <section class="live-ranking">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-title__small">Torcida ao vivo</span>
+          <h2>Quem está na frente?</h2>
+        </div>
+
+        <div class="live-ranking__card">
+          <div class="live-ranking__item">
+            <div class="live-ranking__top">
+              <span class="live-ranking__name live-ranking__name--red">Tira-Prosa</span>
+              <span class="live-ranking__value" id="rankingTiraProsa">0 torcedores</span>
+            </div>
+            <div class="bar">
+              <div class="bar-fill bar-fill--red" id="barTiraProsa" style="width: 50%;"></div>
+            </div>
+            <p class="live-ranking__percent" id="percentTiraProsa">50%</p>
+          </div>
+
+          <div class="live-ranking__item">
+            <div class="live-ranking__top">
+              <span class="live-ranking__name live-ranking__name--blue">Corajoso</span>
+              <span class="live-ranking__value" id="rankingCorajoso">0 torcedores</span>
+            </div>
+            <div class="bar">
+              <div class="bar-fill bar-fill--blue" id="barCorajoso" style="width: 50%;"></div>
+            </div>
+            <p class="live-ranking__percent" id="percentCorajoso">50%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-home">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-title__small">Cultura e tradição</span>
+          <h2>Sobre o festival</h2>
+        </div>
+
+        <p>
+          O Festival de Fonte Boa celebra a tradição dos bois-bumbás, reunindo cultura,
+          identidade, emoção e a força do povo amazonense em uma grande festa popular.
+        </p>
+      </div>
+    </section>
+
+    <section class="bois-home">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-title__small">Os protagonistas</span>
+          <h2>Conheça os bois</h2>
+        </div>
+
+        <div class="bois-home__grid">
+          <div class="boi-home-card boi-home-card--red">
+            <h3>Tira-Prosa</h3>
+            <p>Vermelho e branco. Tradição, emoção e a força da torcida encarnada.</p>
+          </div>
+
+          <div class="boi-home-card boi-home-card--blue">
+            <h3>Corajoso</h3>
+            <p>Azul e branco. Garra, orgulho e a energia da torcida azul.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-home">
+      <div class="container">
+        <h2>Represente seu boi</h2>
+        <p>Cadastre-se e ajude a mostrar qual torcida é a maior de Fonte Boa.</p>
+        <a href="cadastro.html" class="btn btn--light">Fazer cadastro</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/ranking.js"></script>
+  <footer class="footer">
+  <div class="container footer__content">
+    <div class="footer__brand">
+      <img src="assets/images/bois-logo.png" alt="Festival de Fonte Boa" class="footer__logo">
+      <div>
+        <strong>Festival de Fonte Boa</strong>
+        <p>Tradição, cultura e a força das torcidas.</p>
+      </div>
+    </div>
+
+    <div class="footer__links">
+      <a href="index.html">Início</a>
+      <a href="festival.html">Festival</a>
+      <a href="bois.html">Bois</a>
+      <a href="ranking.html">Ranking</a>
+      <a href="cadastro.html">Cadastro</a>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <p>Fonte Boa - Amazonas • Festival de Fonte Boa</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
