@@ -2,6 +2,8 @@ const form = document.getElementById("cadastroForm");
 const mensagem = document.getElementById("mensagemCadastro");
 const cpfInput = document.getElementById("cpf");
 
+const API_URL = "https://festival-fonte-boa-production.up.railway.app";
+
 function formatarCPF(valor) {
   return valor
     .replace(/\D/g, "")
@@ -52,8 +54,6 @@ if (form) {
     const cpf = document.getElementById("cpf").value.trim();
     const boi = document.getElementById("boi").value;
 
-    console.log({ nome, cidade, cpf, boi });
-
     if (!nome || !cidade || !cpf || !boi) {
       mensagem.textContent = "Preencha todos os campos.";
       mensagem.style.color = "#ffcc00";
@@ -67,7 +67,7 @@ if (form) {
     }
 
     try {
-      fetch("https://festival-fonte-boa-production.up.railway.app/api/torcedores", {
+      const resposta = await fetch(`${API_URL}/api/torcedores`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
