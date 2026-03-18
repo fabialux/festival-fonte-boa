@@ -1,6 +1,6 @@
 async function carregarRanking() {
   try {
-    const resposta = await fetch("http://localhost:3000/api/ranking");
+    fetch("https://festival-fonte-boa-production.up.railway.app");
     const dados = await resposta.json();
 
     const tira = Number(dados.tiraprosa || 0);
